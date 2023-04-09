@@ -1,0 +1,12 @@
+num="1323445577678899"
+nums=num.split("")
+result=[]
+for (i=0; i<num.length;i++){
+  result.push(nums[i])
+  if(parseInt(nums[i])%2!==0 && parseInt(nums[(i+1)])%2!==0 && i+1<num.length){
+    result.push("-")
+  }
+}
+console.log(result.join(""))
+
+  
